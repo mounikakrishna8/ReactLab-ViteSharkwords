@@ -1,3 +1,5 @@
+import sample from 'lodash.sample';
+
 const words = [
   'strawberry',
   'orange',
@@ -13,4 +15,9 @@ const words = [
   'chocolate',
 ];
 
-function getRandomWord() {}
+function getRandomWord() {
+  return sample(words);
+}
+
+export default getRandomWord; // why a default export instead of a named export?
+
